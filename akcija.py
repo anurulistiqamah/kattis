@@ -4,5 +4,5 @@ for _ in range(n):
     cost.append(int(input()))
 
 cost = sorted(cost,reverse=True)
-pay = n//3
-print(sum(cost[:pay*2])+sum(cost[pay*2+pay:]))
+pay = sum([cost[x] for x in range(len(cost)) if x%3 != 2])
+print(pay)
