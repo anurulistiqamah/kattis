@@ -14,12 +14,3 @@ for _ in range(n):
     flip = zip(*m2[::-1])
     message = ''.join([''.join(x) for x in flip])
     print(message.replace('*', ''))
-    
-    # message = ''
-    # # print(*m2[::-1])
-    # for i in flip:
-    #     print(i)
-    #     for j in i:
-    #         if j != '*':
-    #             message += j
-    # print(message)
